@@ -2,11 +2,11 @@
 
 **Assigned starter repository:** [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order)
 
-This lab targets the Coffee Shop Order module. The starter files are kept in this folder as a reference alongside student test deliverables where available.
+This folder currently contains this status note only. The assigned starter source remains in the linked repository; the completed student test scripts and evidence described in the handoff were not available in the accessible GitHub repositories during this update.
 
-## Handoff-reported student results
+## Handoff-reported results (not independently verified here)
 - Code coverage tests: 11 tests, 94% line coverage.
 - Branch coverage tests: 25 tests, 100% line coverage, 38/38 branches.
-- Evidence PDF: described in the handoff, but not available from the accessible source repositories at this update.
+- An evidence PDF was described in the handoff but was not accessible to copy into this repository.
 
-**Status: awaiting student deliverables/evidence upload.** Do not treat these figures as verified until the actual test scripts and reports are committed and rerun.
+**Status: pending upload of the actual student work.** Add `CodeCoverageTest_coffee_shop_order.py`, `BranchCoverageTest_coffee_shop_order.py`, and the evidence PDF, then rerun the tests and coverage commands before marking this lab complete.
