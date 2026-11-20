@@ -1,0 +1,37 @@
+name: Software Engineering Lab Tests
+
+on:
+  push:
+    paths:
+      - "LAB 6/**"
+      - "LAB 7/**"
+      - ".github/workflows/software-engineering-labs.yml"
+  pull_request:
+    paths:
+      - "LAB 6/**"
+      - "LAB 7/**"
+      - ".github/workflows/software-engineering-labs.yml"
+
+jobs:
+  lab-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Lab 6 dependencies
+        run: python -m pip install -r "LAB 6/requirements.txt"
+      - name: Run Lab 6 functional tests
+        working-directory: LAB 6
+        run: pytest -q test_code_coverage.py
+      - name: Run Lab 6 branch coverage
+        working-directory: LAB 6
+        run: |
+          coverage run --branch -m pytest -q test_branch_coverage.py
+          coverage report -m
+      - name: Install Lab 7 dependencies
+        run: python -m pip install -r "LAB 7/requirements.txt"
+      - name: Run Lab 7 Hypothesis tests
+        working-directory: LAB 7
+        run: pytest -q
