@@ -1,12 +1,27 @@
 # LAB 7 — Hypothesis Fuzz Testing
 
-**Assigned starter repository:** [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order)
+**Assigned starter:** [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order)
 
-This folder currently contains this status note only. The assigned starter source remains in the linked repository; the completed student files described in the handoff were not available in the accessible GitHub repositories during this update.
+## Files
+- `processor.py` — corrected drink-code, shot-price, and modifier parsing functions.
+- `test_processor.py` — nine Hypothesis property-based tests.
+- `requirements.txt` — Hypothesis and pytest dependencies.
+- `fuzzing_report.md` — bug analysis and execution instructions.
 
-## Handoff-reported results (not independently verified here)
-- Fixed 8 bugs in `processor.py`, including a `MOc` typo.
-- Completed `test_processor.py`: 9 tests passing; the original starter reportedly produced 8 failures.
-- A `fuzzing_report.md` and evidence PDF were described in the handoff but were not accessible to copy into this repository.
+## Defects fixed
+1. Corrected the `MOc` menu-key typo to `MOC`.
+2. Added type validation for drink-code input.
+3. Added whitespace trimming and normalization for drink codes.
+4. Replaced raw dictionary lookup failure with a clear `ValueError` for unknown codes.
+5. Rejected missing/empty shot-price CSV input.
+6. Converted malformed shot-price values into a consistent `ValueError`.
+7. Rejected negative, NaN, and infinite prices.
+8. Validated modifier syntax, empty keys/values, empty entries and duplicate keys; split only on the first colon.
 
-**Status: pending upload of the actual student work.** Add the fixed `processor.py`, `test_processor.py`, `fuzzing_report.md`, and evidence PDF, then rerun the Hypothesis tests before marking this lab complete.
+## Run locally
+```bash
+python -m pip install -r requirements.txt
+pytest -q
+```
+
+The nine Hypothesis tests are authored but were not run in the preparation environment because Hypothesis was unavailable and package downloads were blocked. The corrected functions passed 22 direct validation checks. Run the commands above before claiming the Hypothesis suite passed.

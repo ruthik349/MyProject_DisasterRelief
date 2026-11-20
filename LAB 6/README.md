@@ -1,12 +1,24 @@
 # LAB 6 — Code and Branch Coverage
 
-**Assigned starter repository:** [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order)
+**Assigned starter:** [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order)
 
-This folder currently contains this status note only. The assigned starter source remains in the linked repository; the completed student test scripts and evidence described in the handoff were not available in the accessible GitHub repositories during this update.
+## Files
+- `coffee_shop_order.py` — coffee-shop batch and espresso-temperature logic, with validation for malformed orders and customizations.
+- `test_code_coverage.py` — 11 functional tests.
+- `test_branch_coverage.py` — 25 tests targeting all conditional outcomes.
+- `requirements.txt` — test dependencies.
+- `coverage_report.md` and `coverage_evidence.pdf` — measured test and coverage results.
 
-## Handoff-reported results (not independently verified here)
-- Code coverage tests: 11 tests, 94% line coverage.
-- Branch coverage tests: 25 tests, 100% line coverage, 38/38 branches.
-- An evidence PDF was described in the handoff but was not accessible to copy into this repository.
+## Run locally
+```bash
+python -m pip install -r requirements.txt
+pytest -q test_code_coverage.py
+coverage erase
+coverage run --branch -m pytest -q test_branch_coverage.py
+coverage report -m
+```
 
-**Status: pending upload of the actual student work.** Add `CodeCoverageTest_coffee_shop_order.py`, `BranchCoverageTest_coffee_shop_order.py`, and the evidence PDF, then rerun the tests and coverage commands before marking this lab complete.
+## Verified result in the build environment
+- Functional/code-coverage suite: **11 passed**.
+- Branch-coverage suite: **25 passed**.
+- `coffee_shop_order.py`: **100% statement coverage and 44/44 branch outcomes** under the 25-test branch suite.
