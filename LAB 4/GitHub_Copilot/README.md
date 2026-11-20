@@ -9,7 +9,7 @@ cd disaster-relief-code
 npm test
 ```
 
-The handoff reports 24 passing tests. This count has not been rerun as part of the repository move; run the command locally before submission.
+The 24 repository tests were rerun for this submission: 7 API tests and 17 logic tests passed when each file was executed directly with Node. The sandbox blocked the worker-based `npm test` wrapper with `spawn EPERM`; the exact commands and output are in [the terminal evidence file](../evidence/terminal-test-results.txt).
 
 ## Evidence still required
 Add at least three genuine screenshots from your own GitHub Copilot Chat session showing prompts and Copilot replies. Add a short first-person note (2–3 lines) explaining what you changed and why. Do not use fabricated screenshots.

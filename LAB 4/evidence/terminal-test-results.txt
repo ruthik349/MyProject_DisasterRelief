@@ -1,0 +1,58 @@
+Lab 4 terminal test evidence
+Date: 2026-11-20
+Repository: ruthik349/MyProject_DisasterRelief
+
+Disaster Relief API
+Command: node test/api.test.js
+✔ verified shelter coordinator can submit a requisition and gets a priority (43.5014ms)
+✔ requisition without authentication gets 401 (NFR-002) (7.2608ms)
+✔ unverified account cannot submit a requisition (NFR-002) (5.4044ms)
+✔ volunteer cannot run allocation (role check, NFR-002) (5.3026ms)
+✔ invalid requisition is rejected with 400 and error list (6.0862ms)
+✔ manager allocation serves critical water first and reduces warehouse stock (28.166ms)
+✔ volunteer updates own delivery; another volunteer is blocked (10.0323ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 112.1217
+
+Command: node test/logic.test.js
+✔ water with <=24h of stock is P1 critical (1.6509ms)
+✔ medical kit with plenty of stock is still P2 (0.1368ms)
+✔ blankets with plenty of stock are P3 (0.1169ms)
+✔ blankets about to run out are P2 (0.114ms)
+✔ validation rejects bad category, zero quantity and missing shelter (0.1845ms)
+✔ validation accepts a good requisition (0.5976ms)
+✔ P1 water is dispatched before P3 blankets (sample FR-001 pass criterion) (0.3209ms)
+✔ scarce stock goes to the higher priority requisition first (0.285ms)
+✔ allocation never mutates its inputs (0.1444ms)
+✔ no stock gives status None and a shortfall (0.1963ms)
+✔ already-allocated requisitions are skipped (0.1531ms)
+✔ only verified, available volunteers holding all required skills are matched (0.2261ms)
+✔ nearest volunteer is listed first and count is respected (0.1918ms)
+✔ delivery follows Loaded -> InTransit -> Delivered (1.0776ms)
+✔ cannot jump straight from Loaded to Delivered (0.389ms)
+✔ a different volunteer cannot update the delivery (0.1336ms)
+✔ delivery 31+ minutes past ETA is overdue; delivered ones never are (0.1387ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12.9393
+
+Fruit Catcher
+Command: python verify_game.py (SDL_VIDEODRIVER=dummy)
+PASS catch awards one point
+PASS missed fruit removes one life without points
+PASS zero lives enters GAME_OVER and stops updates
+PASS R restarts score, lives, and fruit state
+
+Total: 24 Disaster Relief tests passed (7 API + 17 logic) and 4 Fruit Catcher checks passed.
+Note: `npm test` invokes Node's worker-based test runner, which this sandbox blocked with spawn EPERM. Running the same repository test files directly succeeded. The Fruit Catcher checks exercise catch scoring, missed-fruit life loss, game-over stop, and restart.
