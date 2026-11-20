@@ -1,21 +1,32 @@
-# MyProject_DisasterRelief – Disaster Relief Supply & Volunteer Coordinator
+# Software Engineering Labs — Disaster Relief Supply & Volunteer Coordinator
 
-**Student:** Ruthik | **SRN:** PES1UG25CS837 | **Section:** H | **Faculty:** Ambika K  
-**Course:** Software Engineering, PES University, Dept. of CSE | **Problem Statement:** #64 – Sustainability & Green Tech
+**Student:** Ruthik  
+**SRN:** PES1UG25CS837 · **Section:** H · **Course:** Software Engineering · PES University  
+**Problem statement:** #64 — Disaster Relief Supply & Volunteer Coordinator
 
-## Problem Statement
-An emergency disaster management platform mapping critical shelter supply needs (water, blankets, medical kits), dispatching volunteer skill sets, and tracking relief vehicle deliveries.
+This repository consolidates the Software Engineering lab deliverables in numbered folders. The layout follows the folder naming convention used in [ManojGaonkar05/MyProject_FoodBankSurplus](https://github.com/ManojGaonkar05/MyProject_FoodBankSurplus), while retaining this repository and its commit history.
 
-**Actors:** Relief Volunteer, Disaster Manager (official). Shelter Coordinator and GPS Tracking Service are added in the Lab 1 diagram.
+## Lab index
 
-## Repository Structure
-| Folder | Contents | Status |
+| Folder | Topic | Contents / status |
 |---|---|---|
-| [1_RE](1_RE/) | Requirements table (5 FR + 2 NFR), RTM, UML use-case diagram, use-case flow specification | Done |
-| [2_Architectural_Diagram](2_Architectural_Diagram/) | Layered architecture diagram | Done |
-| [3_Screenshots_GitHub_Jira](3_Screenshots_GitHub_Jira/) | Lab 2 Kanban, Scrum, Bug Tracking reports + GitHub/Jira screenshots | Done |
-| [4_SRS_and_WBS](4_SRS_and_WBS/) | SRS and Work Breakdown Structure | Done |
-| [5_GitHub_Copilot_Code](5_GitHub_Copilot_Code/) | Copilot-generated code, passing tests, Copilot prompts | Done |
-| [6_Software_Testing_Tools](6_Software_Testing_Tools/) | Bug fix and retest of the shared game application | Done |
+| [LAB 1](LAB%201/) | Requirements, SRS and WBS | Requirements, traceability matrix, use-case diagram and flow, SRS and WBS — existing work moved into the Lab 1 area |
+| [LAB 2](LAB%202/Project_Management/) | Project management | Kanban, Scrum and bug-tracking Word reports and Jira import CSVs are included. **Pending:** add genuine GitHub/Jira screenshots to the marked placeholders and export final PDFs |
+| [LAB 3](LAB%203/Architecture/) | Software architecture | Architecture diagram (PNG/SVG) |
+| [LAB 4](LAB%204/) | Copilot and software testing | Disaster-relief Node.js reference implementation and Pygame Fruit Catcher fix/evidence. **Pending:** real Copilot prompt/reply screenshots and a short explanation of changes |
+| [LAB 5](LAB%205/) | Static code analysis | Energy tariff project, issue/reflection notes and available analysis reports. Original source: [L5_03_energy_tariff](https://github.com/ruthik349/L5_03_energy_tariff); additional submitted PDF/video material: [SE-DEMO](https://github.com/ruthik349/SE-DEMO) |
+| [LAB 6](LAB%206/) | Code and branch coverage | Coffee Shop Order tests and evidence. Source assignment repository: [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order). **Pending upload:** completed student test files/reports described in the handoff were not accessible in the connected repositories during this update |
+| [LAB 7](LAB%207/) | Hypothesis fuzz testing | Coffee Shop Order processor fuzz testing. Source assignment repository: [SETAPESU26/L6_L7_03_coffee_shop_order](https://github.com/SETAPESU26/L6_L7_03_coffee_shop_order). **Pending upload:** completed student test files/reports described in the handoff were not accessible in the connected repositories during this update |
 
-![Architecture](2_Architectural_Diagram/Architecture_Diagram.png)
+## Separate coursework repositories (not consolidated here)
+
+- [PES1UG25CS837-pes_vcs](https://github.com/ruthik349/PES1UG25CS837-pes_vcs) — VCS project
+- [DAA-Project-Question2](https://github.com/ruthik349/DAA-Project-Question2) — DAA assignment
+
+## Important evidence notes
+
+- Screenshots must be genuine captures from the student's own GitHub/Jira/Copilot sessions. No placeholder or generated image is presented as evidence.
+- Lab 2 Word documents still contain screenshot placeholders. See [LAB 2 README](LAB%202/Project_Management/README.md).
+- Lab 4 retains the Word Scramble work/evidence already present in the source repo under `Word_Scramble_Reference`; the Fruit Catcher work is documented separately. Verify the assigned Lab 4 task with the course handout before final submission.
+- Lab 5–7 supplied evidence is preserved as received. Re-run commands locally if the instructor requires terminal screenshots captured on the student's computer.
+- The original repository history is retained; the two separate coursework repositories above are not modified.
