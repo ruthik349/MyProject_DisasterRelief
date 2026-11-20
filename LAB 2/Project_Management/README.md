@@ -1,20 +1,21 @@
 # LAB 2 — Project Management (Kanban, Scrum and Bug Tracking)
 
-## Included material
+This folder contains the original Lab 2 reports and Jira import CSVs moved from the earlier `3_Screenshots_GitHub_Jira` directory.
+
+## Included
 - `Lab2_Kanban.docx`
 - `Lab2_Scrum.docx`
 - `Lab2_BugTracking.docx`
-- `jira_import_stories.csv` and `jira_import_bugs.csv`
+- `jira_import_stories.csv`
+- `jira_import_bugs.csv`
 
-## Remaining evidence to capture
-The original Word reports contain explicit screenshot placeholders. Replace them with real screenshots from the student's own accounts; do not use screenshots from another student's repository.
-
-1. GitHub repository created page (repository name visible).
-2. GitHub repository file list showing the consolidated labs.
+## Still required
+The three Word reports contain screenshot placeholders. Add genuine screenshots captured from your own accounts:
+1. GitHub repository creation page.
+2. Repository file list after consolidation.
 3. Jira project creation page.
-4. Jira board showing created issues (Kanban board and/or Scrum sprint, as required by the handout).
+4. Jira board containing your created issues.
 
-Then export each completed Word report to PDF in this folder. Until those captures and PDFs are added, Lab 2 is **partially complete**, not complete.
+Paste the screenshots into the relevant reports and export all three as PDFs into this directory. Until then, Lab 2 is **partially complete**.
 
-## Jira import guidance
-Use the CSV templates in this folder. Create the project and any required epic before importing stories/bugs. Check the project key in the Word reports and correct it if Jira generated a different key.
+Use the CSV templates to import stories and bugs into your Jira project. Check that the project key in each report matches your actual Jira project.
